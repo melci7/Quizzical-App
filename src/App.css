@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  max-width: 900px;
+  background-color: #f5f7fb;
+}
+
+.container {
+  background-image: url("./assets/blob 5.png"), url("./assets/blob 6.png");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 3em;
+}
+
+.start-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.start-h1 {
+  margin-bottom: 0;
+  color: #293264;
+  font-weight: 700;
+}
+
+.start-text {
+  margin-top: 0.75em;
+  margin-bottom: 1.75em;
+  color: #293264;
+}
+
+.start-btn,
+.check-btn,
+.reset-btn {
+  padding: 1em 3.5em;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  font-family: inherit;
+}
+
+.quiz-text {
+  color: #293264;
+  font-size: 1.25rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the label to look like a button */
+label.button {
+  display: inline;
+  padding: 0.5em 1em;
+  background-color: #f5f7fb;
+  border: 1px solid #4d5b9e;
+  color: #293264;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Style the label for checked state */
+input[type="radio"]:checked + label.button {
+  background-color: #d6dbf5;
+  border: none;
+}
+
+.radio-main {
+  display: flex;
+  gap: 1em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #dbdef0;
+  align-items: center;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+
+.answer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.score-text {
+  color: #293264;
+  font-weight: 700;
+}
+
+.radio-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
